@@ -1,0 +1,213 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.navbar{
+  display:flex;
+  align-items:center;
+  padding: 0;
+} 
+nav{
+  flex:1;
+  text-align:right;
+}
+.current{
+  background-color:#6666ff;
+
+}
+nav ul{
+  display:inline-block;
+  list-style-type:none;
+}
+nav ul li{
+  display:inline-block;
+  margin-right:10px;
+  font-size:15px;
+}
+nav ul li a{
+  border:1px;
+  padding:4px;
+  border-radius:10px;
+}
+nav ul li i{
+  padding: 1px;
+}
+
+nav ul li a:hover{
+  background-color:#000000;
+  color:#fff;
+  transition:0.5s;
+}
+a{
+  text-decoration:none;
+  color: #000;
+}
+p{
+  color:#000000;
+  text-align: center;
+  padding: 4px ;
+}
+h1{
+  padding: 10px;
+}
+h2{
+  text-align: center;
+  padding: 4px ;
+}
+
+.row{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  flex-basis: 50%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.layout {
+  padding: 0 16px;
+}
+
+.layout::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+img{
+
+  width: 30%;
+  align-items: center;
+  position: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+#cart_count{
+    text-align: center;
+    padding: 0 0.5rem 0.1rem 0.9rem;
+    border-radius: 1px;
+    color: #fff;
+    
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #b30086;
+  color: white;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("Images/thankyou.jpg");
+  opacity: 0.8;
+  /* Full height */
+  height: 100%;
+  min-height:100vh;
+  width:100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  
+  background-size: cover;
+}
+.banner-text{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  color:#000000;
+  width:90%;
+}
+.banner-text h1{
+  font-size:36px;
+  font-weight:bold;
+  margin-bottom:5px;
+}
+.banner-text p{
+  margin:10px 0 10px;
+  font-size:20px;
+  color:#000000;
+  font-weight:bold;
+}
